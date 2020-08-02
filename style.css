@@ -15,12 +15,16 @@
     --font-action: "Mulish", serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .hamburguer {
     /*background-color: red;*/
     width: 2rem;
     height: 2rem;
     position: fixed;
-    z-index: 100;
+    z-index: 200;
     right: 2rem;
     top: 2rem;
     display: flex;
@@ -177,6 +181,7 @@ header{
     top: 0;
     right: -20rem;
     transition: all 1s;
+    z-index: 150;
 }
 
 .show-menu .sidebar{
@@ -321,12 +326,13 @@ header{
 
 .projects {
     display: flex;
-    
+    justify-content: space-evenly;
 }
 
 .card{
-    width: 20rem;
-    height: 30rem;
+    width: 18rem;
+    height: 25rem;
+    position: relative;
 }
 
 .card-img-wrapper {
@@ -335,6 +341,213 @@ header{
 }
 
 .card-img-wrapper img{
-    object-fit: cover;
+    object-fit: scale-down;
     width: 100%;
+    height: 100%;
+    border-radius: .5rem;
+    transition: opacity .3s ;
+}
+
+.card:hover .card-img-wrapper img {
+    opacity: .8;
+}
+
+.card-info {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    padding: 2rem;
+    text-shadow: 0.3rem 0.2rem 0.3rem rgba(0, 0, 0, .6);
+    transition: all .3s;
+}
+
+.card:hover .card-info{
+    bottom: 2rem;
+    opacity:1;
+    visibility: visible;
+}
+
+.card-info h2{
+    font-family: var(--font-primary);
+    font-size: 2rem;
+    font-weight: 500;
+    color:#eee;
+}
+
+.card-info h3{
+    font-family: var(--font-secundary);
+    font-weight: bolder;
+    color: #870000;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+
+.card-info p{
+    font-family: var(--font-secundary);
+    font-weight: 500;
+    color: #eee;
+    font-weight: 400;
+    width: 80%;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    background: #870000; 
+    background: -webkit-linear-gradient(to right, #190A05, #870000);  
+    background: linear-gradient(to left, #190A05, #870000); 
+    font-family: var(--font-action);
+    color: #eee;
+    border-radius: .5rem;
+    box-shadow: 0 .1rem .8rem rgba(0, 0, 0, .4);
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.card-info button {
+    width: 8rem;
+    height: 2.5rem;
+}
+
+.section-contact{
+    width: 100%;
+    height: 100vh;
+    background-color: #272727;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-wrapper {
+    width: 60%;
+    height: 35rem;
+    display: flex;
+    box-shadow: 0 2rem 3rem rgba(0, 0, 0, .5);
+}
+
+.contact-left {
+    width: 35%;
+    background: 
+        linear-gradient(rgba(15, 15, 15, 0.6),rgba(22, 22, 22, 0.9)),
+        url(img/email.jpg);
+    background-size: cover;
+}
+
+.contact-right{
+    width: 65%;
+    background-color: #eee;
+    padding: 1rem 3rem 3rem 3rem;
+}
+
+.section-contact h1{
+    width: 100%;
+    text-align: center;
+    font-family: var(--font-primary);
+    color: #272727;
+    font-size: 3rem;
+    font-weight: lighter;
+}
+
+.section-contact form{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-group{
+    position: relative;
+}
+
+.field{
+    background: transparent;
+    border: none;
+    width: 20rem;
+    font-size: 1.5rem;
+    font-family: var(--font-secundary);
+    border-bottom: 2px dashed #636363;
+    height: 3rem;
+    outline: none;
+    margin: 2rem 0;
+}
+
+.input-group textarea{
+    padding-top: .5rem;
+    max-width: 25rem;
+    max-height: 3rem;
+}
+
+.field-label{
+    position: absolute;
+    left: 0;
+    top: 3rem;
+    font-size: 1.2rem;
+    font-family: var(--font-secundary);
+    text-transform: uppercase;
+    transition: all 0.3s;
+}
+
+.field:focus ~ label{
+    top: 0;
+    font-size: 1rem;
+
+}
+
+.field:focus{
+    border-bottom: 1px solid;
+}
+
+.s-button{
+    width: 70%;
+    height: 2rem;
+    font-size: 1.2rem;
+}
+
+footer {
+    width: 100%;
+    height: 7rem;
+    background-color: #17181b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-content p{
+    font-family: var(--font-secundary);
+    color: #a7a7a7;
+    font-size: 1.2rem;
+}
+
+.social-list a {
+    margin: 0 2rem;
+    color: #a7a7a7;
+    font-size: 1.3rem;
+}
+
+.social-list ul {
+    display: flex;
+}
+
+#link-top {
+    position: fixed;
+    right: 3rem;
+    bottom: 3rem;
+    width: 3rem;
+    height: 3rem;
+    background: #870000; 
+    background: -webkit-linear-gradient(to right, #190A05, #870000);  
+    background: linear-gradient(to left, #190A05, #870000);
+    color: #a7a7a7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 0.1rem 0.6rem #000000;
 }
