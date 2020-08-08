@@ -312,6 +312,268 @@ header{
     background-color: #f5f5f5;
 }
 
+.container .card-skills1 .card-skills2 .card-skills3 .card-skills4 .card-skills5 .card-skills6{
+    position: relative;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    border-radius: 4px;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.container .card-skills1:hover{
+    transform: translateY(-10px);
+}
+
+.container .card-skills2:hover{
+    transform: translateY(-10px);
+}
+
+.container .card-skills3:hover{
+    transform: translateY(-10px);
+}
+
+.container .card-skills4:hover{
+    transform: translateY(-10px);
+}
+
+.container .card-skills5:hover{
+    transform: translateY(-10px);
+}
+
+.container .card-skills6:hover{
+    transform: translateY(-10px);
+}
+
+.container .card-skills1:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.container .card-skills2:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.container .card-skills3:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.container .card-skills4:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.container .card-skills5:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.container .card-skills6:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.percent {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 20px #000;
+    background: #eee;
+    z-index: 1000;
+}
+
+.percent .number {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.percent .number h2{
+    color: #777;
+    font-weight: 700;
+    font-size: 40px;
+    transition: 0.5s;
+}
+
+.card-skills1:hover .percent .number h2 {
+    color: rgb(66, 65, 65);
+    font-size: 50px;
+}
+
+.card-skills2:hover .percent .number h2 {
+    color: rgb(66, 65, 65);
+    font-size: 50px;
+}
+
+.card-skills3:hover .percent .number h2 {
+    color: rgb(66, 65, 65);
+    font-size: 50px;
+}
+
+.card-skills4:hover .percent .number h2 {
+    color: rgb(66, 65, 65);
+    font-size: 50px;
+}
+
+.card-skills5:hover .percent .number h2 {
+    color: rgb(66, 65, 65);
+    font-size: 50px;
+}
+
+.card-skills6:hover .percent .number h2 {
+    color: rgb(66, 65, 65);
+    font-size: 50px;
+}
+
+.percent .number h2 span {
+    font-size: 24px;
+    color: #777;
+
+}
+
+.card-skills1:hover .percent .number h2 span {
+    color: black;
+}
+
+.card-skills2:hover .percent .number h2 span {
+    color: black;
+}
+
+.card-skills3:hover .percent .number h2 span {
+    color: black;
+}
+
+.card-skills4:hover .percent .number h2 span {
+    color: black;
+}
+
+.card-skills5:hover .percent .number h2 span {
+    color: black;
+}
+
+.card-skills6:hover .percent .number h2 span {
+    color: black;
+}
+
+.card-skills1:hover .text {
+    color: black;
+}
+
+.card-skills2:hover .text {
+    color: black;
+}
+
+.card-skills3:hover .text {
+    color: black;
+}
+
+.card-skills4:hover .text {
+    color: black;
+}
+
+.card-skills5:hover .text {
+    color: black;
+}
+
+.card-skills6:hover .text {
+    color: black;
+}
+
+svg {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    z-index: 1000;
+}
+
+svg circle{
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke: #b18c8c;
+    stroke-width: 10;
+    stroke-linecap: round;
+    transform: translate(5px, 5px);
+}
+
+svg circle:nth-child(2){
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+}
+
+.section-skils .card-skills1 svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440 * 70) /100);
+    stroke: #870000;
+}
+
+.section-skils .card-skills2 svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440 * 60) /100);
+    stroke: #870000;
+}
+
+.section-skils .card-skills3 svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440 * 65) /100);
+    stroke: #870000;
+}
+
+.section-skils .card-skills4 svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440 * 40) /100);
+    stroke: #870000;
+}
+
+.section-skils .card-skills5 svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440 * 30) /100);
+    stroke: #870000;
+}
+
+.section-skils .card-skills6 svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440 * 70) /100);
+    stroke: #870000;
+}
+
 .sessao-header {
     display: flex;
     align-items: center;
@@ -345,7 +607,8 @@ header{
 
 .skills-text {
     font-family: var(--font-secundary);
-    margin-top: 1rem;
+    margin-top: .5rem;
+    margin-left: 2rem;
 }
 
 .skills-img-wrapper {
