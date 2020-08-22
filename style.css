@@ -31,6 +31,7 @@ html{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    z-index: 3000;
 }
 
 .show-menu .hamburguer{
@@ -182,7 +183,7 @@ header{
     top: 0;
     right: -20rem;
     transition: all 1s;
-    z-index: 150;
+    z-index: 2000;
 }
 
 .show-menu .sidebar{
@@ -849,4 +850,35 @@ footer {
     align-items: center;
     border-radius: 5px;
     box-shadow: 0 0.1rem 0.6rem #000000;
+    z-index: 1900;
+}
+
+@media (max-width: 600px) {
+    .container-ge, .home{
+        width: 100%;
+    }
+
+    .about-me, .text-about {
+        width: 100%;
+    }
+
+    .img-wrapper-about {
+        display: none;
+    }
+
+    .section-skils, .skills, .sessao-header{
+        width: 100%;
+    }
+
+    .skills-img-wrapper {
+        display: none;
+    }
+
+    .section-contact {
+        width: 100%;
+    }
+
+    .footer-content, .social-list, .contact-wrapper {
+        width: 100%;
+    }
 }
