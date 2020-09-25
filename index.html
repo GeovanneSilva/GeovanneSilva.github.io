@@ -3,16 +3,21 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Geovanne Silva</title>
 </head>
 
 <body>
+    <div class="loader_bg">
+        <div class="loader">
+        </div>
+    </div>
+
     <div class="container-ge">
         <div class="hamburguer">
             <div class="line" id="line1"></div>
@@ -214,35 +219,35 @@
             <div class="projects">
                 <div class="card">
                     <div class="card-img-wrapper">
-                        <img src="img/img-projects.png" alt="Image Projects">
+                        <img src="img/Migles.png" alt="Image Projects">
                     </div>
                     <div class="card-info">
-                        <h2>Coming soon</h2>
-                        <h3>...</h3>
-                        <p>in the process of creation</p>
-                        <button class="btn">more about</button>
+                        <h2>Logo Migles</h2>
+                        <h3>Photoshop</h3>
+                        <p>Logo criada para uma loja de roupa feminina.</p>
+                        <button class="btn"><a href="https://drive.google.com/drive/folders/1DQx68MFOy4XWaJsk912vHpdolokFu42n?usp=sharing">more about</a></button>
                     </div>
                 </div>
                 <div class="card">
                     <div class="card-img-wrapper">
-                        <img src="img/img-projects.png" alt="Image Projects">
+                        <img src="img/Site-oner.JPG" alt="Image Projects">
                     </div>
                     <div class="card-info">
-                        <h2>Coming soon</h2>
-                        <h3>...</h3>
-                        <p>in the process of creation</p>
-                        <button class="btn">more about</button>
+                        <h2>Oner Graphic</h2>
+                        <h3>AdobeXd, HTML, CSS, JavaScript</h3>
+                        <p>Site criado para uma empresa de designers freelancer, desde o layout até a programação para web.</p>
+                        <button class="btn"><a href="https://drive.google.com/drive/folders/1nsW9haPa2h-wOOwx_Jn4whEGEonnN3lq?usp=sharing">more about</a></button>
                     </div>
                 </div>
                 <div class="card">
                     <div class="card-img-wrapper">
-                        <img src="img/img-projects.png" alt="Image Projects">
+                        <img src="img/Upload login.JPG" alt="Image Projects">
                     </div>
                     <div class="card-info">
-                        <h2>Coming soon</h2>
-                        <h3>...</h3>
-                        <p>in the process of creation</p>
-                        <button class="btn">more about</button>
+                        <h2>UpLoad</h2>
+                        <h3>AdobeXD, photoshop</h3>
+                        <p>Projeto de criação de um site que simula uma aalternativa de investimento de extrangeiros no Ceará, feito para ser apresentado no Hackathon Ceará Global.</p>
+                        <button class="btn"><a href="https://drive.google.com/drive/folders/19qQcCCujsGipG-FzUnoQ1VvpU0CEVdCz?usp=sharing">more about</a></button>
                     </div>
                 </div>
             </div>
@@ -291,6 +296,12 @@
         </a>
     </div>
 </body>
-<script src="script.js"></script>
+<script src="https://cdnjs.cloundflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+    setTimeout(function(){
+        $('.loader_bg').fadeToggle();
+    }, 1500);
+
+</script>
 
 </html>

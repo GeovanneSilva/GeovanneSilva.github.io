@@ -9,6 +9,8 @@
     text-decoration: none;
 }
 
+body { overflow-x: hidden; }
+
 
 :root{
     --font-primary: "Baloo Da 2", serif;
@@ -18,6 +20,55 @@
 
 html{
     scroll-behavior: smooth;
+}
+
+.loader_bg {
+    position: fixed;
+    z-index: 999999999;
+    background-color:#fff;
+    width: 100%;
+    height: 100vh;
+}
+
+.loader {
+    border: 0 solid transparent;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: calc(50vh - 75px);
+    left: calc(50vw - 75px);
+}
+
+.loader:before, .loader:after{
+    content: '';
+    border: 1em solid #870000;
+    border-radius: 50%;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: loader 2s linear infinite;
+    opacity: 0;
+}
+
+.loader:before{
+    animation-delay: .5s;
+}
+
+@keyframes loader{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 0;
+    }
 }
 
 .hamburguer {
@@ -633,6 +684,7 @@ svg circle:nth-child(2){
     width: 18rem;
     height: 25rem;
     position: relative;
+    margin-bottom: 2rem;
 }
 
 .card-img-wrapper {
@@ -658,27 +710,28 @@ svg circle:nth-child(2){
     position: absolute;
     bottom: 0;
     padding: 2rem;
-    text-shadow: 0.3rem 0.2rem 0.3rem rgba(0, 0, 0, .6);
+    text-shadow: 0.2rem 0.1rem 0.2rem rgba(0, 0, 0, .6);
     transition: all .3s;
 }
 
 .card:hover .card-info{
     bottom: 2rem;
-    opacity:1;
+    opacity:2;
     visibility: visible;
+    background-color: rgba(0, 0, 0, .6);
 }
 
 .card-info h2{
     font-family: var(--font-primary);
     font-size: 2rem;
     font-weight: 500;
-    color:#eee;
+    color:#ffff;
 }
 
 .card-info h3{
     font-family: var(--font-secundary);
     font-weight: bolder;
-    color: #870000;
+    color: #ffff;
     text-transform: uppercase;
     margin-bottom: 1.5rem;
 }
@@ -686,7 +739,7 @@ svg circle:nth-child(2){
 .card-info p{
     font-family: var(--font-secundary);
     font-weight: 500;
-    color: #eee;
+    color: #fff;
     font-weight: 400;
     width: 80%;
     margin-bottom: 2rem;
@@ -703,6 +756,12 @@ svg circle:nth-child(2){
     border: none;
     cursor: pointer;
     text-transform: uppercase;
+    text-decoration: none;
+}
+
+.btn a{
+    text-decoration: none;
+    color: white;
 }
 
 .card-info button {
