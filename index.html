@@ -1,310 +1,206 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <title>Geovanne Silva</title>
 </head>
-
 <body>
-    <div class="loader_bg">
-        <div class="loader">
+    <div class="linha"></div>
+    <nav class="top-menu">
+        <ul class="menu-option">
+            <li><a href="#contato">Contato</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#home">Home</a></li>
+        </ul>
+    </nav>
+    <section class="header" id="home">
+       <div class="banner"> 
+            <div class="item"></div>
+            <div class="name">
+                <h1>Geovanne Silva</h1>
+            </div>
+            <div class="line2"></div>
+            <div class="description">
+                <h3>Desenvolvedor frontend e Designer </h3>
+            </div>
+            <div>
+               <a href="#sobre"> <h2>Sobre</h2>
+                <img src="/img/right.png"></a>
+            </div>
         </div>
-    </div>
+        <a href="https://www.linkedin.com/in/geovanne-s/"><i class="fab fa-linkedin fa-2x" id="link"></i></a>
+        <a href="https://www.instagram.com/ggeo74/?hl=pt-br"><i class="fab fa-instagram fa-2x" id="insta"></i></a>
+        <a href="https://www.facebook.com/GeovanneDev/"><i class="fab fa-facebook-square fa-2x" id="face"></i></a>
+        <div class="header">
+            <img src="/img/teclado.jpg">
+        </div>
+    </section>
+    <section class="sobre" id="sobre">
+        <div class="container">
+            <img src="/img/Grupo 14.png">
+            <h1>sobre</h1>
+            <p>Olá, meu nome é Geovanne Silva, Designer e Desenvolvedor<br> web, estudante de redes de computadores, entusiasta da<br> tecnologia e design. 
+                Passei os últimos anos estudando o<br> máximo que pude sobre desenvolvimento web e design, agora,<br> finalmente, tenho colocado em prática tudo o que aprendi em<br> meus projetos pessoais fazendo o que mais gosto:<br> Desenvolver!</p>
+        </div>
+    </section>
 
-    <div class="container-ge">
-        <div class="hamburguer">
-            <div class="line" id="line1"></div>
-            <div class="line" id="line2"></div>
-            <div class="line" id="line3"></div>
-            <span>fechar</span>
+    <section class="projects" id="projetos">
+        <h1>Projetos</h1>
+        <div class="card">
+            <div class="card-image"></div>
+            <div class="card-text">
+                <span class="descri">Layout, Design</span>
+                <h2><a href="https://www.behance.net/gallery/111772939/EasyPoint">EasyPoint</a></h2>
+                <p>Layout de site criado para empresa de ponto online, tudo conforme o cliente pediu. Design criado com figma e photoshop.</p>
+            </div>
+            <div class="card-stats">
+                <div class="stat border">
+                    <div class="type">Photoshop</div>
+                </div>
+                <div class="stat">
+                    <div class="type">Figma</div>
+                </div>
+            </div>
+        </div>
+        <div class="card2">
+            <div class="card-image2"></div>
+            <div class="card-text">
+                <span class="descri">Layout, Design</span>
+                <h2><a href="https://www.behance.net/gallery/111772823/OnerGraphic-Layout-Web">Oner Graphic</a></h2>
+                <p>Layout de site criado para empresa que atua no ramo de design grafico. Design criado com AdobeXD e Photoshop.</p>
+            </div>
+            <div class="card-stats">
+                <div class="stat border">
+                    <div class="type">Photoshop</div>
+                </div>
+                <div class="stat">
+                    <div class="type">AdobeXD</div>
+                </div>
+            </div>
+        </div>
+        <div class="card3">
+            <div class="card-image3"></div>
+            <div class="card-text">
+                <span class="descri">Layout, Design</span>
+                <h2>UpLoad</h2>
+                <p>Layout de site criado no hackathon Ceará Global, organizado pela MUVON, criado e pensado na melhor forma de entregar o produto. Design criado com AdobeXD e Photoshop.</p>
+            </div>
+            <div class="card-stats">
+                <div class="stat border">
+                    <div class="type">Photoshop</div>
+                </div>
+                <div class="stat">
+                    <div class="type">Figma</div>
+                </div>
+            </div>
+        </div>
+        <div class="card4">
+            <div class="card-image4"></div>
+            <div class="card-text">
+                <span class="descri">Criação de Logo</span>
+                <h2>EasyPoint</h2>
+                <p>Logo criada do zero para empresa de ponto online. cliente aprovou projeto de primeira. Logo criada com Photoshop e Illustrator.</p>
+            </div>
+            <div class="card-stats">
+                <div class="stat border">
+                    <div class="type">Photoshop</div>
+                </div>
+                <div class="stat">
+                    <div class="type">Illustrator</div>
+                </div>
+            </div>
+        </div>
+        <div class="card5">
+            <div class="card-image5"></div>
+            <div class="card-text">
+                <span class="descri">Criação de Banner</span>
+                <h2>Banner para site</h2>
+                <p>Banner criada para Marketingplace usando photoshop e Illustrator.</p>
+            </div>
+            <div class="card-stats">
+                <div class="stat border">
+                    <div class="type">Photoshop</div>
+                </div>
+                <div class="stat">
+                    <div class="type">Illustrator</div>
+                </div>
+            </div>
+        </div>
+        <div class="card6">
+            <div class="card-image6"></div>
+            <div class="card-text">
+                <span class="descri">Criação de Banner</span>
+                <h2>Banner para site</h2>
+                <p>Banner criada para Marketingplace usando photoshop e Illustrator.</p>
+            </div>
+            <div class="card-stats">
+                <div class="stat border">
+                    <div class="type">Photoshop</div>
+                </div>
+                <div class="stat">
+                    <div class="type">Illustrator</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="skils" id="habilidades">
+        <h1>Habilidades</h1>
+        <div class="info">
+            <h3>HTML5</h3>
+            <p>65%</p>
+            <div class="progress-bar" style="--width: 65" data-label=""></div>
+        </div>
+        <div class="info2">
+            <h3>CSS3</h3>
+            <p>50%</p>
+            <div class="progress-bar2" style="--width: 50" data-label=""></div>
+        </div>
+        <div class="info3">
+            <h3>JavaScript</h3>
+            <p>46%</p>
+            <div class="progress-bar3" style="--width: 46" data-label=""></div>
+        </div>
+        <div class="info4">
+            <h3>Photoshop</h3>
+            <p>85%</p>
+            <div class="progress-bar4" style="--width: 85" data-label=""></div>
+        </div>
+        <div class="info5">
+            <h3>AdobeXD</h3>
+            <p>90%</p>
+            <div class="progress-bar5" style="--width: 90" data-label=""></div>
+        </div>
+        <div class="info6">
+            <h3>Figma</h3>
+            <p>75%</p>
+            <div class="progress-bar6" style="--width: 75" data-label=""></div>
+        </div>
+    </section>
+
+    <section class="contact" id="contato">
+            <h3>Entre em contato e faça um orçamento</h3>
+            <h4 class="text1"><i class="fab fa-whatsapp"></i><a href="https://api.whatsapp.com/send?phone=5585988562149&text=Ol%C3%A1%2C%20gostaria%20de%20fazer%20um%20or%C3%A7amento!">   (85) 9 88562149</a></h4>
+            <h4 class="text2"><i class="far fa-envelope"></i>  geovanne.08@gmail.com</h4>
+    </section>
+
+    <section class="rodape">
+        <div class="container-rodape">
+            <h1 class="nomi">Geovanne Silva</h1>
+            <p class="zap"><a href="https://api.whatsapp.com/send?phone=5585988562149&text=Ol%C3%A1%2C%20gostaria%20de%20fazer%20um%20or%C3%A7amento!">+55 859 88562149</a></p>
+            <p class="endereco">Rua Tenente Moacir Matos, 325</p>
+            <p class="endereco-rua">Montese, Fortaleza</p>
+            <p class="copy">Copyright 2020 Geovanne Silva</p>
+            <p class="direitos">Todos os direitos reservados.</p>
         </div>
 
-        <header id="home">
-            <div class="img-wrapper">
-                <img src="img/teclado.JPG" alt="">
-            </div>
-            <div class="banner">
-                <h1>Web Developer & Front End Designer</h1>
-                <p>Geovanne Silva</p>
-                <button>more about</button>
-            </div>
-        </header>
-
-        <aside class="sidebar">
-            <nav>
-                <ul class="menu">
-                    <li class="menu-item"><a href="#home" class="menu-link">Home</a></li>
-                    <li class="menu-item"><a href="#about" class="menu-link">About</a></li>
-                    <li class="menu-item"><a href="#skills" class="menu-link">Skils</a></li>
-                    <li class="menu-item"><a href="#projects" class="menu-link">Projects</a></li>
-                    <li class="menu-item"><a href="#contact" class="menu-link">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="social-media">
-                <a href="https://www.facebook.com/GeovanneDev/"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://www.instagram.com/ggeo74/?hl=pt-br"><i class="fab fa-instagram"></i></a>
-                <a href="https://github.com/GeovanneSilva"><i class="fab fa-github-alt"></i></a>
-            </div>
-        </aside>
-
-        <section class="about-me" id="about">
-            <div class="sessao-header">
-                <h1>About-me</h1>
-            </div>
-            <div class="text-about">
-                <p>Hello, my name is Geovanne Silva, web developer, student of computer networks, lover of technology and design. I spent the last few years studying as much as could about web development, and now, finally, i have been putting everything i learned into practice in my personal projects doing what i enjoy most: developing!</p>
-            </div>
-            <div class="img-wrapper-about"><img src="img/profile.jpg" alt="Image"></div>
-        </section>
-
-        <section class="section-skils" id="skills">
-            <div class="sessao-header">
-                <h1>Skills</h1>
-            </div>
-            <div class="skills">
-                <div class="skill">
-                    <div class="skills-header">
-                        <i class="fab fa-html5"></i>
-                        <h3>HTML</h3>
-                    </div>
-                    <div class="skills-text">
-                        <div class="container">
-                            <div class="card-skills1">
-                                <div class="box">
-                                    <div class="percent">
-                                        <svg>
-                                            <circle cx="70" cy="70" r="70"></circle>
-                                            <circle cx="70" cy="70" r="70"></circle>
-                                        </svg>
-                                        <div class="number">
-                                            <h2>70<span>%</span></h2>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                    </div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <div class="skills-header">
-                        <i class="fab fa-css3-alt"></i>
-                        <h3>CSS</h3>
-                    </div>
-                    <div class="skills-text">
-                        <div class="container">
-                            <div class="card-skills2">
-                                <div class="box">
-                                    <div class="percent">
-                                        <svg>
-                                            <circle cx="70" cy="70" r="70"></circle>
-                                            <circle cx="70" cy="70" r="70"></circle>
-                                        </svg>
-                                        <div class="number">
-                                            <h2>60<span>%</span></h2>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                    </div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <div class="skills-header">
-                        <i class="fab fa-js"></i>
-                        <h3>JavaScript</h3>
-                    </div>
-                    <div class="skills-text">
-                        <div class="container">
-                            <div class="card-skills3">
-                                <div class="box">
-                                    <div class="percent">
-                                        <svg>
-                                            <circle cx="70" cy="70" r="70"></circle>
-                                            <circle cx="70" cy="70" r="70"></circle>
-                                        </svg>
-                                        <div class="number">
-                                            <h2>65<span>%</span></h2>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                    </div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <div class="skills-header">
-                        <i class="fab fa-bootstrap"></i>
-                        <h3>Bootstrap</h3>
-                    </div>
-                    <div class="skills-text">
-                        <div class="container">
-                            <div class="card-skills4">
-                                <div class="box">
-                                    <div class="percent">
-                                        <svg>
-                                            <circle cx="70" cy="70" r="70"></circle>
-                                            <circle cx="70" cy="70" r="70"></circle>
-                                        </svg>
-                                        <div class="number">
-                                            <h2>40<span>%</span></h2>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                    </div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <div class="skills-header">
-                        <i class="fab fa-node-js"></i>
-                        <h3>NodeJS</h3>
-                    </div>
-                    <div class="skills-text">
-                        <div class="container">
-                            <div class="card-skills5">
-                                <div class="box">
-                                    <div class="percent">
-                                        <svg>
-                                            <circle cx="70" cy="70" r="70"></circle>
-                                            <circle cx="70" cy="70" r="70"></circle>
-                                        </svg>
-                                        <div class="number">
-                                            <h2>30<span>%</span></h2>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                    </div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <div class="skills-header">
-                        <i class="fas fa-pencil-alt"></i>
-                        <h3>Design</h3>
-                    </div>
-                    <div class="skills-text">
-                        <div class="container">
-                            <div class="card-skills6">
-                                <div class="box">
-                                    <div class="percent">
-                                        <svg>
-                                            <circle cx="70" cy="70" r="70"></circle>
-                                            <circle cx="70" cy="70" r="70"></circle>
-                                        </svg>
-                                        <div class="number">
-                                            <h2>70<span>%</span></h2>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                    </div>
-                    </div>
-                </div>
-                <div class="skills-img-wrapper">
-                    <img src="img/illustration.png" alt="Image Skills">
-                </div>
-            </div>
-        </section>
-        <section class="section-skills" id="projects">
-            <div class="sessao-header">
-                <h1>Projects</h1>
-            </div>
-            <div class="projects">
-                <div class="card">
-                    <div class="card-img-wrapper">
-                        <img src="img/Migles.png" alt="Image Projects">
-                    </div>
-                    <div class="card-info">
-                        <h2>Logo Migles</h2>
-                        <h3>Photoshop</h3>
-                        <p>Logo criada para uma loja de roupa feminina.</p>
-                        <button class="btn"><a href="https://drive.google.com/drive/folders/1DQx68MFOy4XWaJsk912vHpdolokFu42n?usp=sharing">more about</a></button>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-img-wrapper">
-                        <img src="img/Site-oner.JPG" alt="Image Projects">
-                    </div>
-                    <div class="card-info">
-                        <h2>Oner Graphic</h2>
-                        <h3>AdobeXd, HTML, CSS, JavaScript</h3>
-                        <p>Site criado para uma empresa de designers freelancer, desde o layout até a programação para web.</p>
-                        <button class="btn"><a href="https://drive.google.com/drive/folders/1nsW9haPa2h-wOOwx_Jn4whEGEonnN3lq?usp=sharing">more about</a></button>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-img-wrapper">
-                        <img src="img/Upload login.JPG" alt="Image Projects">
-                    </div>
-                    <div class="card-info">
-                        <h2>UpLoad</h2>
-                        <h3>AdobeXD, photoshop</h3>
-                        <p>Projeto de criação de um site que simula uma aalternativa de investimento de extrangeiros no Ceará, feito para ser apresentado no Hackathon Ceará Global.</p>
-                        <button class="btn"><a href="https://drive.google.com/drive/folders/19qQcCCujsGipG-FzUnoQ1VvpU0CEVdCz?usp=sharing">more about</a></button>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section-contact" id="contact">
-            <div class="contact-wrapper">
-                <div class="contact-left"></div>
-                <div class="contact-right">
-                    <h1>Contact</h1>
-                    <form>
-                        <div class="input-group">
-                            <input type="text" class="field" id="name">
-                            <label for="name" class="field-label">Name</label>
-                        </div>
-                        <div class="input-group">
-                            <input type="text" class="field" id="email">
-                            <label for="email" class="field-label">E-mail</label>
-                        </div>
-                        <div class="input-group">
-                            <textarea class="field" id="mensagem"></textarea>
-                            <label for="mensagem" class="field-label">message</label>
-                        </div>
-                        <button type="submit" class="btn s-button">Submit</button>
-                    </form>
-                </div>
-            </div>
-        </section>
-        <footer>
-            <div class="footer-content">
-                <p>
-                    <br>Copyright &copy; 2020, Geovanne Silva - Todos os direito reservados</br>
-                    Illustrations by Manypixels.co
-                </p>
-                <div class="social-list">
-                    <ul>
-                        <li><a href="https://www.facebook.com/GeovanneDev/"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="https://www.instagram.com/ggeo74/?hl=pt-br"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="https://github.com/GeovanneSilva"><i class="fab fa-github-alt"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-        </footer>
-        <a href="#home" id="link-top">
-            <i class="fas fa-arrow-up"></i>
-        </a>
-    </div>
+    </section>
 </body>
-<script src="https://cdnjs.cloundflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script>
-    setTimeout(function(){
-        $('.loader_bg').fadeToggle();
-    }, 1500);
-
-    document.querySelector(".hamburguer").addEventListener("click", () => 
-    document.querySelector(".container-ge").classList.toggle("show-menu")
-);
-</script>
-
 </html>
