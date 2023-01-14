@@ -1,7 +1,11 @@
 <template>
-  <HelloWorld />
+  <header>
+    <div>
+      <h1>Hello!</h1>
+    </div>
+  </header>
 </template>
 
 <script lang="ts" setup>
-  import HelloWorld from '@/components/HelloWorld.vue'
+  
 </script>

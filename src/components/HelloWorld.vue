@@ -1,17 +1,11 @@
 <template>
   <v-container class="fill-height">
-    <v-responsive class="d-flex align-center text-center fill-height">
-      <v-img
-        contain
-        height="300"
-        src="@/assets/logo.svg"
-      />
-
-      <div class="text-body-2 font-weight-light mb-n1">Welcome to</div>
-
-      <h1 class="text-h2 font-weight-bold">Vuetify</h1>
-
-      <div class="py-14" />
+    <v-responsive class="d-flex fill-height">
+      
+      <h1 class="text-h2 font-weight-bold">Hello!</h1>
+      
+      <div class="text-body-2 font-weight-light mb-n1">I’m Geovanne Silva, Front-End Developer and UI/UX Design.<br><br>
+                                                        Be Welcome!</div>
 
       <v-row class="d-flex align-center justify-center">
         <v-col cols="auto">
@@ -75,5 +69,4 @@
 </template>
 
 <script setup lang="ts">
-  //
 </script>
